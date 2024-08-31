@@ -2,7 +2,7 @@ name: First Workflow
 on: [push]
 jobs:
   get-date:
-  - name: Get the date
+    name: Get the date
     runs-on: ubuntu-latest
     steps:
       - name: Get date
