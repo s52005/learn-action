@@ -1,9 +1,15 @@
 name: First Workflow
 on: [push]
 jobs:
-  get-date:
-    name: Get the date
+  get-date-linux:
+    name: Get the date Linux
     runs-on: ubuntu-latest
+    steps:
+      - name: Get date
+        run: date
+  get-date-windows:
+    name: Get the date Windows
+    runs-on: windows-latest
     steps:
       - name: Get date
         run: date
